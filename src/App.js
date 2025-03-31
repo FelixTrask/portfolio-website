@@ -20,15 +20,15 @@ function App() {
         <h2>Projects 🚀</h2>
         <div className="project-card">
           <h3>Clearchat</h3>
-          <p>ClearChat is a messaging app that revolutionizes digital communication by integrating real-time facial anaylasis into the messages.</p>
-          <a href="https://github.com/felixtrask" target="_blank" rel="noopener noreferrer">
+          <p>ClearChat is a messaging app that revolutionizes digital communication by integrating real-time facial emotion anaylasis into the messages.</p>
+          <a href="https://github.com/rayyshen/clearchat" target="_blank" rel="noopener noreferrer">
             View on GitHub
           </a>
         </div>
         <div className="project-card">
-          <h3>Weather App</h3>
-          <p>A simple weather app that fetches live data from an API.</p>
-          <a href="https://github.com/felixtrask/weather-app" target="_blank" rel="noopener noreferrer">
+          <h3>Portfolio Website</h3>
+          <p>This website, designed to show my accomplishments.</p>
+          <a href="https://github.com/FelixTrask/portfolio-website" target="_blank" rel="noopener noreferrer">
             View on GitHub
           </a>
         </div>
