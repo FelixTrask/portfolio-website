@@ -7,20 +7,20 @@ function App() {
       <header className="App-header">
         <h1>👋 Hi, I'm <span className="name">Felix Trask</span></h1>
         <p className="description">I'm a 15-year-old coder who loves creating cool stuff with code! 🎮💻</p>
-        <p className="skills">Skills: HTML, CSS, JavaScript, React, Node.js, and more!</p>
+        <p className="skills">Skills: Python, HTML, CSS, JavaScript, React, Node.js, and more!</p>
         <button
           className="contact-button"
-          onClick={() => alert('Let\'s chat!')}
+          onClick={() => window.location.replace("https://www.github.com/FelixTrask")}
         >
-          Contact Me 💬
+          My Github
         </button>
       </header>
 
       <section className="projects">
         <h2>Projects 🚀</h2>
         <div className="project-card">
-          <h3>Portfolio Website</h3>
-          <p>Built with React, showcasing my coding journey!</p>
+          <h3>Clearchat</h3>
+          <p>ClearChat is a messaging app that revolutionizes digital communication by integrating real-time facial anaylasis into the messages.</p>
           <a href="https://github.com/felixtrask" target="_blank" rel="noopener noreferrer">
             View on GitHub
           </a>
