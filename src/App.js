@@ -88,12 +88,16 @@ function App() {
         </div>
 
       </section>
-
-      <img src={`${process.env.PUBLIC_URL}/webgifs/froggygif.gif`} alt="frog" height="31" width="88" className="display: inline" />
-      <img src={`${process.env.PUBLIC_URL}/webgifs/cssdif.gif`} alt="css" height="31" width="88" className="display: inline" />
-      <img src={`${process.env.PUBLIC_URL}/webgifs/candybarsnow.gif`} alt="bars" height="31" width="88" className="display: inline" />
-      <img src={`${process.env.PUBLIC_URL}/webgifs/github-check.gif`} alt="github" height="31" width="88" className="display: inline" />
-      <img src={`${process.env.PUBLIC_URL}/webgifs/hasmile.gif`} alt="smile" height="31" width="88" className="display: inline" />
+      
+      <div className="flex space-x-4">
+        <img src={`${process.env.PUBLIC_URL}/webgifs/froggygif.gif`} alt="frog" height="31" width="88" />
+        <img src={`${process.env.PUBLIC_URL}/webgifs/cssdif.gif`} alt="css" height="31" width="88" />
+        <img src={`${process.env.PUBLIC_URL}/webgifs/candybarsnow.gif`} alt="bars" height="31" width="88" />
+        <a href="https://github.com/FelixTrask/">
+        <img src={`${process.env.PUBLIC_URL}/webgifs/github-check.gif`} alt="github" height="31" width="88" />
+        </a>
+        <img src={`${process.env.PUBLIC_URL}/webgifs/hasmile.gif`} alt="smile" height="31" width="88" />
+      </div>
 
       <footer className="mt-16 text-xs text-footer-text text-center">
         Built with ❤️ by Felix Trask
