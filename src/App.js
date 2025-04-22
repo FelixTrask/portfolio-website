@@ -23,7 +23,7 @@ function App() {
           👋 Hi, I'm <span className="text-pink-500">Felix Trask</span>
         </h1>
         <p className="text-lg text-text-sub mb-2">
-          I'm a 15-year-old coder who loves creating cool stuff with code!
+          I'm a high school student in NoVa who loves to make/hack/learn cool stuff!
         </p>
         <p className="text-md text-yellow-400 mb-6">
           Skills: Python, HTML, CSS, JavaScript, React, Node.js, and more!
