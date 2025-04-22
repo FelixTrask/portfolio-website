@@ -1,27 +1,45 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 
 function App() {
+
+  useEffect(() => {
+    document.title = 'Felix Trask - Portfolio';
+
+    const link = document.querySelector("link[rel*='icon']");
+    link.href = '/favicon.ico'; //public folder
+  }, []);
+
   return (
-    <div className="bg-bg-dark text-text-main min-h-screen px-4 py-8 text-center font-sans leading-relaxed">
-      <header className="bg-header-dark p-8 rounded-lg mb-8">
-        <h1 className="text-2xl font-bold">
-          👋 Hi, I'm <span className="text-highlight">Felix Trask</span>
+
+    <div className="bg-bg-dark text-white min-h-screen px-4 py-8 font-sans relative flex flex-col items-center justify-center">
+      <div className="fixed -z-10 top-0 left-0 w-full h-full overflow-hidden">
+        <div className="absolute top-[-100px] left-[-100px] w-[400px] h-[400px] bg-blob-purple rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob"></div>
+        <div className="absolute top-[200px] right-[-100px] w-[400px] h-[400px] bg-blob-pink rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob animation-delay-2000"></div>
+      </div>
+
+      <header className="bg-card-bg/70 backdrop-blur-lg p-8 rounded-xl max-w-3xl mx-auto shadow-glow text-center">
+        <h1 className="text-4xl font-bold mb-4">
+          👋 Hi, I'm <span className="text-pink-500">Felix Trask</span>
         </h1>
-        <p className="text-lg text-text-sub my-2">I'm a 15-year-old coder who loves creating cool stuff with code! 🎮💻</p>
-        <p className="text-[1.15rem] text-skill mb-6">Skills: Python, HTML, CSS, JavaScript, React, Node.js, and more!</p>
+        <p className="text-lg text-text-sub mb-2">
+          I'm a 15-year-old coder who loves creating cool stuff with code!
+        </p>
+        <p className="text-md text-yellow-400 mb-6">
+          Skills: Python, HTML, CSS, JavaScript, React, Node.js, and more!
+        </p>
         <button
-          className="bg-highlight text-white py-3 px-6 rounded-md text-lg cursor-pointer transition-colors hover:bg-highlight-alt"
-          onClick={() => window.location.replace("https://www.github.com/FelixTrask")}
+          className="bg-pink-600 hover:bg-pink-500 text-white font-semibold py-2 px-5 rounded-md transition-colors"
+          onClick={() => window.location.replace('https://www.github.com/FelixTrask')}
         >
-          My Github
+          My GitHub
         </button>
       </header>
 
-      <section className="mt-12">
+      <section className="mt-12 w-full flex flex-col items-center">
         <h2 className="text-2xl text-accent mb-6">Projects 🚀</h2>
 
-        <div className="bg-card-bg rounded-lg p-6 my-4 max-w-2xl mx-auto shadow-card">
+        <div className="bg-card-bg rounded-lg p-6 my-6 max-w-2xl mx-auto transition-shadow duration-300 hover:shadow-glow text-center">
           <h3 className="mb-2 text-skill text-xl font-semibold">Clearchat</h3>
           <p className="mb-4 text-text-sub">
             ClearChat is a messaging app that revolutionizes digital communication by integrating real-time facial emotion analysis into the messages.
@@ -36,7 +54,7 @@ function App() {
           </a>
         </div>
 
-        <div className="bg-card-bg rounded-lg p-6 my-4 max-w-2xl mx-auto shadow-card">
+        <div className="bg-card-bg rounded-lg p-6 my-6 max-w-2xl mx-auto transition-shadow duration-300 hover:shadow-glow text-center">
           <h3 className="mb-2 text-skill text-xl font-semibold">Portfolio Website</h3>
           <p className="mb-4 text-text-sub">This website, designed to show my accomplishments.</p>
           <a
@@ -50,7 +68,7 @@ function App() {
         </div>
       </section>
 
-      <footer className="mt-16 text-xs text-footer-text">
+      <footer className="mt-16 text-xs text-footer-text text-center">
         Built with ❤️ by Felix Trask
       </footer>
     </div>

@@ -4,28 +4,43 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'bg-dark': '#1e1e1e',
-        'header-dark': '#282c34',
-        'text-main': '#ffffff',
-        'text-sub': '#dcdcdc',
-        'highlight': '#ff6347',
-        'highlight-alt': '#ff4500',
-        'skill': '#ffcc00',
-        'accent': '#ffa500',
-        'card-bg': '#333333',
-        'footer-text': '#b0b0b0',
-      },
-      borderRadius: {
-        'lg': '12px',
+        'bg-dark': '#0f0f0f', // Dark background color
+        'header-dark': '#282c34', // Header dark background
+        'text-main': '#ffffff', // Main text color (white)
+        'text-sub': '#dcdcdc', // Subtext color
+        'highlight': '#ff6347', // Highlight color
+        'highlight-alt': '#ff4500', // Alternate highlight color
+        'skill': '#ffcc00', // Skill color
+        'accent': '#ffa500', // Accent color
+        'card-bg': '#333333', // Card background color
+        'footer-text': '#b0b0b0', // Footer text color
+        'blob-purple': '#6c63ff', // Blob purple color
+        'blob-pink': '#ff6584', // Blob pink color
       },
       boxShadow: {
-        'card': '0 4px 10px rgba(0, 0, 0, 0.3)',
+        glow: '0 0 30px rgba(255, 99, 255, 0.2)', // Glowing shadow effect
+      },
+      keyframes: {
+        blob: {
+          '0%': { transform: 'translate(0px, 0px) scale(1)' },
+          '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+          '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+          '100%': { transform: 'translate(0px, 0px) scale(1)' },
+        },
+      },
+      animation: {
+        blob: 'blob 20s infinite ease-in-out', // Blobbing animation
+      },
+      borderRadius: {
+        'lg': '12px', // Large border radius for rounding
       },
       fontSize: {
-        'xs': '0.9rem',
+        'xs': '0.9rem', // Extra small font size
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+  ],
 }
-
