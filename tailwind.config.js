@@ -36,7 +36,14 @@ module.exports = {
       },
       fontSize: {
         'xs': '0.9rem', // Extra small font size
-      }
+      },
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',  // Large screens and up
+        xl: '1280px',
+        '2xl': '1536px',
+      },
     },
   },
   plugins: [

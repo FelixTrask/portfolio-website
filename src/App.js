@@ -39,52 +39,57 @@ function App() {
       <section className="mt-12 w-full flex flex-col items-center">
         <h2 className="text-2xl text-accent font-semibold mb-6">Projects 🚀</h2>
 
-        <div className="bg-card-bg rounded-lg p-6 my-6 max-w-2xl mx-auto transition-shadow duration-300 hover:shadow-glow text-center">
-          <h3 className="mb-2 text-skill text-xl font-semibold">Clearchat</h3>
-          <p className="mb-4 text-text-sub">
-            ClearChat is a messaging app that revolutionizes digital communication by integrating real-time facial emotion analysis into the messages. Made at <a className="text-skill hover:text-highlight font-bold" 
-              href="https://scrapyard.hackclub.com/nova" 
-              target="_blank" 
-              rel="noopener noreferrer">
-            Scrapyard NoVa
+        {/* Project Cards Container */}
+        <div className="flex flex-col lg:flex-row lg:space-x-6 w-full max-w-7xl mx-auto">
+          {/* Project 1 */}
+          <div className="bg-card-bg rounded-lg p-6 my-6 w-full lg:w-1/3 transition-shadow duration-300 hover:shadow-glow text-center">
+            <h3 className="mb-2 text-skill text-xl font-semibold">Clearchat</h3>
+            <p className="mb-4 text-text-sub">
+              ClearChat is a messaging app that revolutionizes digital communication by integrating real-time facial emotion analysis into the messages. Made at <a className="text-skill hover:text-highlight font-bold" 
+                href="https://scrapyard.hackclub.com/nova" 
+                target="_blank" 
+                rel="noopener noreferrer">
+              Scrapyard NoVa
+              </a>
+            </p>
+            <a
+              className="text-skill font-bold hover:text-highlight transition-colors"
+              href="https://github.com/rayyshen/clearchat"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on GitHub
             </a>
-          </p>
-          <a
-            className="text-skill font-bold hover:text-highlight transition-colors"
-            href="https://github.com/rayyshen/clearchat"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View on GitHub
-          </a>
-        </div>
+          </div>
 
-        <div className="bg-card-bg rounded-lg p-6 my-6 max-w-2xl mx-auto transition-shadow duration-300 hover:shadow-glow text-center">
-          <h3 className="mb-2 text-skill text-xl font-semibold">Python AI Project</h3>
-          <p className="mb-4 text-text-sub">A python project that uses a genetic algorithm to guide dots to a goal.</p>
-          <a
-            className="text-skill font-bold hover:text-highlight transition-colors"
-            href="https://github.com/FelixTrask/AI-project"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View on GitHub
-          </a>
-        </div>
+          {/* Project 2 */}
+          <div className="bg-card-bg rounded-lg p-6 my-6 w-full lg:w-1/3 transition-shadow duration-300 hover:shadow-glow text-center">
+            <h3 className="mb-2 text-skill text-xl font-semibold">Python AI Project</h3>
+            <p className="mb-4 text-text-sub">A python project that uses a genetic algorithm to guide dots to a goal.</p>
+            <a
+              className="text-skill font-bold hover:text-highlight transition-colors"
+              href="https://github.com/FelixTrask/AI-project"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on GitHub
+            </a>
+          </div>
 
-        <div className="bg-card-bg rounded-lg p-6 my-6 max-w-2xl mx-auto transition-shadow duration-300 hover:shadow-glow text-center">
-          <h3 className="mb-2 text-skill text-xl font-semibold">Portfolio Website</h3>
-          <p className="mb-4 text-text-sub">This website, designed to show my accomplishments.</p>
-          <a
-            className="text-skill font-bold hover:text-highlight transition-colors"
-            href="https://github.com/FelixTrask/portfolio-website"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View on GitHub
-          </a>
+          {/* Project 3 */}
+          <div className="bg-card-bg rounded-lg p-6 my-6 w-full lg:w-1/3 transition-shadow duration-300 hover:shadow-glow text-center">
+            <h3 className="mb-2 text-skill text-xl font-semibold">Portfolio Website</h3>
+            <p className="mb-4 text-text-sub">This website, designed to show my accomplishments.</p>
+            <a
+              className="text-skill font-bold hover:text-highlight transition-colors"
+              href="https://github.com/FelixTrask/portfolio-website"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on GitHub
+            </a>
+          </div>
         </div>
-
       </section>
       
       <div className="flex space-x-4 hidden lg:flex">
