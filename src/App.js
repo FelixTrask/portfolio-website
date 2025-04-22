@@ -60,6 +60,19 @@ function App() {
         </div>
 
         <div className="bg-card-bg rounded-lg p-6 my-6 max-w-2xl mx-auto transition-shadow duration-300 hover:shadow-glow text-center">
+          <h3 className="mb-2 text-skill text-xl font-semibold">Python AI Project</h3>
+          <p className="mb-4 text-text-sub">A python project that uses a genetic algorithm to guide dots to a goal.</p>
+          <a
+            className="text-skill font-bold hover:text-highlight transition-colors"
+            href="https://github.com/FelixTrask/AI-project"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View on GitHub
+          </a>
+        </div>
+
+        <div className="bg-card-bg rounded-lg p-6 my-6 max-w-2xl mx-auto transition-shadow duration-300 hover:shadow-glow text-center">
           <h3 className="mb-2 text-skill text-xl font-semibold">Portfolio Website</h3>
           <p className="mb-4 text-text-sub">This website, designed to show my accomplishments.</p>
           <a
@@ -71,6 +84,7 @@ function App() {
             View on GitHub
           </a>
         </div>
+
       </section>
 
       <footer className="mt-16 text-xs text-footer-text text-center">
