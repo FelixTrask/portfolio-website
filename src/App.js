@@ -13,10 +13,12 @@ function App() {
   return (
 
     <div className="bg-bg-dark text-white min-h-screen px-4 py-8 font-sans relative flex flex-col items-center justify-center">
-      <div className="fixed -z-10 top-0 left-0 w-full h-full overflow-hidden">
-        <div className="absolute top-[-100px] left-[-100px] w-[400px] h-[400px] bg-blob-purple rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob"></div>
-        <div className="absolute top-[200px] right-[-100px] w-[400px] h-[400px] bg-blob-pink rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob animation-delay-2000"></div>
+      <div className="fixed -z-9 top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+        <div className="absolute top-[-100px] left-[-100px] w-[400px] h-[400px] bg-blob-purple rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-blob"></div>
+        <div className="absolute top-[200px] right-[-100px] w-[400px] h-[400px] bg-blob-pink rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-blob animation-delay-2000"></div>
+        <div className="absolute bottom-[-150px] left-[100px] w-[400px] h-[400px] bg-blob-blue rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-blob animation-delay-4000"></div>
       </div>
+
 
       <header className="bg-card-bg/70 backdrop-blur-lg p-8 rounded-xl max-w-3xl mx-auto shadow-glow text-center">
         <h1 className="text-4xl font-bold mb-4">
@@ -37,7 +39,7 @@ function App() {
       </header>
 
       <section className="mt-12 w-full flex flex-col items-center">
-        <h2 className="text-2xl text-accent mb-6">Projects 🚀</h2>
+        <h2 className="text-2xl text-accent font-semibold mb-6">Projects 🚀</h2>
 
         <div className="bg-card-bg rounded-lg p-6 my-6 max-w-2xl mx-auto transition-shadow duration-300 hover:shadow-glow text-center">
           <h3 className="mb-2 text-skill text-xl font-semibold">Clearchat</h3>
@@ -86,6 +88,12 @@ function App() {
         </div>
 
       </section>
+
+      <img src={`${process.env.PUBLIC_URL}/webgifs/froggygif.gif`} alt="frog" height="31" width="88" className="display: inline" />
+      <img src={`${process.env.PUBLIC_URL}/webgifs/cssdif.gif`} alt="css" height="31" width="88" className="display: inline" />
+      <img src={`${process.env.PUBLIC_URL}/webgifs/candybarsnow.gif`} alt="bars" height="31" width="88" className="display: inline" />
+      <img src={`${process.env.PUBLIC_URL}/webgifs/github-check.gif`} alt="github" height="31" width="88" className="display: inline" />
+      <img src={`${process.env.PUBLIC_URL}/webgifs/hasmile.gif`} alt="smile" height="31" width="88" className="display: inline" />
 
       <footer className="mt-16 text-xs text-footer-text text-center">
         Built with ❤️ by Felix Trask
