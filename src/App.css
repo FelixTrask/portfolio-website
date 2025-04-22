@@ -1,81 +1,12 @@
-/* App.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  background-color: #1e1e1e;
-  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
   text-align: center;
-}
-
-.App {
-  padding: 20px;
-}
-
-.App-header {
-  background-color: #282c34;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.name {
-  color: #ff6347;
-}
-
-.description {
-  font-size: 1.2em;
-  color: #dcdcdc;
-}
-
-.skills {
-  font-size: 1.1em;
-  color: #ffcc00;
-}
-
-.contact-button {
-  background-color: #ff6347;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2em;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-.contact-button:hover {
-  background-color: #ff4500;
-}
-
-.projects {
-  margin-top: 40px;
-}
-
-.projects h2 {
-  font-size: 2em;
-  color: #ffa500;
-}
-
-.project-card {
-  background-color: #333;
-  border-radius: 8px;
-  padding: 20px;
-  margin: 10px 0;
-}
-
-.project-card a {
-  text-decoration: none;
-  color: #ffcc00;
-}
-
-.project-card a:hover {
-  color: #ff6347;
-}
-
-footer {
-  margin-top: 50px;
-  font-size: 0.8em;
-}
-
-.footer-text {
-  color: #b0b0b0;
+  line-height: 1.6;
 }
