@@ -42,7 +42,12 @@ function App() {
         <div className="bg-card-bg rounded-lg p-6 my-6 max-w-2xl mx-auto transition-shadow duration-300 hover:shadow-glow text-center">
           <h3 className="mb-2 text-skill text-xl font-semibold">Clearchat</h3>
           <p className="mb-4 text-text-sub">
-            ClearChat is a messaging app that revolutionizes digital communication by integrating real-time facial emotion analysis into the messages.
+            ClearChat is a messaging app that revolutionizes digital communication by integrating real-time facial emotion analysis into the messages. Made at <a className="text-skill hover:text-highlight font-bold" 
+              href="https://scrapyard.hackclub.com/nova" 
+              target="_blank" 
+              rel="noopener noreferrer">
+            Scrapyard NoVa
+            </a>
           </p>
           <a
             className="text-skill font-bold hover:text-highlight transition-colors"
