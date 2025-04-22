@@ -20,7 +20,7 @@ function App() {
 
       <header className="bg-card-bg/70 backdrop-blur-lg p-8 rounded-xl max-w-3xl mx-auto shadow-glow text-center">
         <h1 className="text-4xl font-bold mb-4">
-          👋 Hi, I'm <span className="text-pink-500">Felix Trask</span>
+          👋 Hi, I'm <span className="bg-gradient-to-r from-pink-500 via-blue-600 to-indigo-400 inline-block text-transparent bg-clip-text">Felix Trask</span>
         </h1>
         <p className="text-lg text-text-sub mb-2">
           I'm a high school student in NoVa who loves to make/hack/learn cool stuff!
