@@ -11,7 +11,9 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-bg-dark text-white min-h-screen px-4 py-8 font-sans relative flex flex-col items-center justify-center">
+    <div className="bg-bg-dark text-white h-screen flex flex-col px-4 py-8 font-sans relative">
+
+      <div className="flex-grow">
       <div className="fixed -z-9 top-0 left-0 w-full h-full overflow-hidden pointer-events-none hidden lg:block">
         <div className="absolute top-[-100px] left-[-100px] w-[400px] h-[400px] bg-blob-purple rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-blob"></div>
         <div className="absolute top-[200px] right-[-100px] w-[400px] h-[400px] bg-blob-pink rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-blob animation-delay-2000"></div>
@@ -39,9 +41,7 @@ function App() {
       <section className="mt-12 w-full flex flex-col items-center">
         <h2 className="text-2xl text-accent font-semibold mb-6">Projects 🚀</h2>
 
-        {/* Project Cards Container */}
         <div className="flex flex-col lg:flex-row lg:space-x-6 w-full max-w-7xl mx-auto">
-          {/* Project 1 */}
           <div className="bg-card-bg rounded-lg p-6 my-6 w-full lg:w-1/3 transition-shadow duration-300 hover:shadow-glow text-center">
             <h3 className="mb-2 text-skill text-xl font-semibold">Clearchat</h3>
             <p className="mb-4 text-text-sub">
@@ -62,7 +62,6 @@ function App() {
             </a>
           </div>
 
-          {/* Project 2 */}
           <div className="bg-card-bg rounded-lg p-6 my-6 w-full lg:w-1/3 transition-shadow duration-300 hover:shadow-glow text-center">
             <h3 className="mb-2 text-skill text-xl font-semibold">Python AI Project</h3>
             <p className="mb-4 text-text-sub">A python project that uses a genetic algorithm to guide dots to a goal.</p>
@@ -76,7 +75,6 @@ function App() {
             </a>
           </div>
 
-          {/* Project 3 */}
           <div className="bg-card-bg rounded-lg p-6 my-6 w-full lg:w-1/3 transition-shadow duration-300 hover:shadow-glow text-center">
             <h3 className="mb-2 text-skill text-xl font-semibold">Portfolio Website</h3>
             <p className="mb-4 text-text-sub">This website, designed to show my accomplishments.</p>
@@ -91,8 +89,9 @@ function App() {
           </div>
         </div>
       </section>
+      </div>
       
-      <div className="flex space-x-4 hidden lg:flex">
+      <div className="flex justify-center items-center space-x-4 hidden lg:flex mb-4">
         <img src={`${process.env.PUBLIC_URL}/webgifs/froggygif.gif`} alt="frog" height="31" width="88" />
         <img src={`${process.env.PUBLIC_URL}/webgifs/cssdif.gif`} alt="css" height="31" width="88" />
         <img src={`${process.env.PUBLIC_URL}/webgifs/candybarsnow.gif`} alt="bars" height="31" width="88" />
@@ -102,8 +101,8 @@ function App() {
         <img src={`${process.env.PUBLIC_URL}/webgifs/hasmile.gif`} alt="smile" height="31" width="88" />
       </div>
 
-      <footer className="mt-16 text-xs text-footer-text text-center">
-        Built with ❤️ by Felix Trask
+      <footer className="mt-auto text-xs text-footer-text text-center">
+          Built with ❤️ by Felix Trask
       </footer>
     </div>
   );
