@@ -11,6 +11,10 @@ function App() {
   }, []);
 
   return (
+    <div>
+    <head>
+      <meta charset="UTF-8"></meta>
+    </head>
     <div className="bg-bg-dark text-white h-screen flex flex-col px-4 py-8 font-sans relative">
 
       <div className="flex-grow">
@@ -104,6 +108,7 @@ function App() {
       <footer className="mt-auto text-xs text-footer-text text-center">
           Built with ❤️ by Felix Trask
       </footer>
+    </div>
     </div>
   );
 }
