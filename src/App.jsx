@@ -18,7 +18,7 @@ export default function App() {
   const gridSize = 100; // square grid size in px
 
   useEffect(() => {
-    document.title = 'Felix Trask - Portfolio';
+    document.title = 'Felix Trask';
     const iconLink = document.querySelector("link[rel*='icon']");
     if (iconLink) iconLink.href = `${process.env.PUBLIC_URL}/favicon.ico`;
 
@@ -220,9 +220,13 @@ export default function App() {
           </div>
         </section>
 
+        <section id="About" className="space-y-12">
+          <h2 className="text-4xl font-semibold text-center">About Me</h2>
+        </section>
+
         {/* Projects Section */}
         <section id="Projects" className="space-y-12">
-          <h2 className="text-4xl font-semibold text-center">Projects 🚀</h2>
+          <h2 className="text-4xl font-semibold text-center">Projects</h2>
           <div className="flex flex-col space-y-12">
             {[
               {
